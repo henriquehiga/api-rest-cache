@@ -1,0 +1,8 @@
+Henrique Higa - RA: 10390109
+
+O objetivo principal é demonstrar como o uso de cache pode reduzir significativamente o tempo de resposta de uma API, especialmente em situações onde as operações de leitura de dados são frequentes e intensivas em recursos. Ao armazenar os dados em cache, evitamos acessos desnecessários ao banco de dados, o que resulta em uma melhoria no desempenho e na eficiência da aplicação.
+Construí uma API com um método GET que retorna uma lista de questões paginadas. Primeiro, ele valida se existem questões no CACHE para a página e quantidade por página solicitadas. Se houver, ele já retorna sem a necessidade de buscar no "banco de dados". Se não houver, ele armazena os dados no cache e em seguida retorna as questões.
+A implementação do cache é feita de forma simples, utilizando um dicionário em Python para armazenar os dados. O tempo de expiração do cache é configurado para 5 segundos, o que significa que após esse tempo, os dados serão buscados novamente e atualizados no cache.
+
+LINK DO GITHUB PAGES: https://henriquehiga.github.io/api-rest-cache/
+LINK DO REPOSITÓRIO: https://github.com/henriquehiga/api-rest-cache/
